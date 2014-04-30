@@ -1,0 +1,19 @@
+{
+    "id": "nodebb-plugin-qiniu",
+    "name": "Qiniu Upload Plugin",
+    "description": "A nodebb plugin that uploads images to qiniu",
+    "url": "https://github.com/eXcellme/nodebb-plugin-qiniu",
+    "library": "./index.js",
+    "staticDirs": {
+        "imgur": "public"
+    },
+    "hooks": [
+        { "hook": "action:app.load", "method": "init"},
+
+        { "hook": "filter:admin.header.build", "method": "admin.menu"},
+        { "hook": "filter:uploadImage", "method": "upload", "priority": 6 }
+
+    ],
+    "minver": "0.4.0",
+    "templates": "./public/templates"
+}
