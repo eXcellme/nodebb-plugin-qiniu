@@ -6,6 +6,8 @@ A nodebb plugin that uploads images to Qiniu.
 
     npm install nodebb-plugin-qiniu
 
+## Usage
+    For more details,please visit http://developer.qiniu.com/docs/v6/api/reference/fop/image/
 
 
 
